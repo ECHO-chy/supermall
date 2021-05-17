@@ -1,0 +1,38 @@
+<template>
+	<swiper :interval=2000>
+		<SwiperItem v-for="item in banners">
+			<a :href="item.link">
+				<img :src="item.image" alt="">
+			</a>
+		</SwiperItem>
+	</swiper>
+</template>
+
+<script>
+import {Swiper, SwiperItem} from '@components/common/swiper';
+
+export default {
+
+  name: 'HomeSwiper',
+
+  props: {
+  	banners: {
+  		type: Array,
+  		default() {
+  			return []
+  		}
+  	}
+  },
+
+  components: {
+  	Swiper,
+  	SwiperItem
+  }
+}
+</script>
+
+<style lang="css" scoped>
+	img{
+		width: 750px;
+	}
+</style>

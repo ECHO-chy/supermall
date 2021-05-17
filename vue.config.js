@@ -27,6 +27,7 @@ module.exports = {
       .set('@', resolve('src'))
       .set('@assets', resolve('src/assets'))
       .set('@components', resolve('src/components'))
+      .set('@network', resolve('src/network'))
       .set('@views', resolve('src/views'))
       .set('@store', resolve('src/store'));
     // 压缩图片

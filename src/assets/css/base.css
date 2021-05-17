@@ -7,7 +7,7 @@
   --color-high-text: #ff5777;
   --color-tint: #ff8198;
   --color-background: #fff;
-  --font-size: 14px;
+  --font-size: 30px;
   --line-height: 1.5;
 }
 
@@ -25,6 +25,7 @@ body {
   -webkit-tap-highlight-color: transparent; /* webkit是苹果浏览器引擎，tap点击，highlight背景高亮，color颜色，颜色用数值调节 */
   background: var(--color-background);
   color: var(--color-text);
+  font-size: var(--font-size);
   /* rem vw/vh */
   width: 100vw;
 }
