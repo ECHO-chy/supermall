@@ -30,6 +30,7 @@ export default {
   methods: {
   	tabControlActive(index) {
   		this.currentIndex = index;
+      this.$emit('tabClick', index)
   	}
   }
 }

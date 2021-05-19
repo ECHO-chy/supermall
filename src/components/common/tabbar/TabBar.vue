@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-	@import '//at.alicdn.com/t/font_2490757_0p5l41ii272d.css';
+	@import 'https://at.alicdn.com/t/font_2490757_0p5l41ii272d.css';
   #tab_bar{
     display: flex;
     background: #f6f6f6;

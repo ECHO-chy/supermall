@@ -15,7 +15,7 @@ export default {
   	path: String,
     activeStyle: {
       type: String,
-      default: '#f00'
+      default: '#FF8198'
     }
   },
   computed: {

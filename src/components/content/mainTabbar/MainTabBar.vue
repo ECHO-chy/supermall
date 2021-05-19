@@ -1,6 +1,6 @@
 <template>
   <TabBar>
-    <TabBarItem path='/home' activeStyle='#0f0'>
+    <TabBarItem path='/home' activeStyle='#FF8198'>
       <template #item-icon>
         <i class="iconfont icon-001_shouye"></i>
       </template>
@@ -8,7 +8,7 @@
         <div>首页</div>
       </template>
     </TabBarItem>
-    <TabBarItem path='/category' activeStyle='#0ff'>
+    <TabBarItem path='/category' activeStyle='#FF8198'>
       <template #item-icon>
         <i class="iconfont icon-001_fenlei"></i>
       </template>
@@ -16,7 +16,7 @@
         <div>分类</div>
       </template>
     </TabBarItem>
-    <TabBarItem path='/cart' activeStyle='#00f'>
+    <TabBarItem path='/cart' activeStyle='#FF8198'>
       <template #item-icon>
         <i class="iconfont icon-001_gouwuche"></i>
       </template>

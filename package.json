@@ -19,7 +19,7 @@
     "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
-    "compression-webpack-plugin": "^7.1.2",
+    "compression-webpack-plugin": "^5.0.0",
     "image-webpack-loader": "^7.0.1",
     "postcss-px-to-viewport": "^1.1.1"
   }

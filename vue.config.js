@@ -6,7 +6,7 @@ const BundleAnalyzerPlugin = require("webpack-bundle-analyzer").BundleAnalyzerPl
 const IS_PROD = ['production', 'prod'].includes(process.env.NODE_ENV);
 const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production' ? '/site/vue-demo/' : '/', // 公共路径
+  publicPath: './', // 公共路径
   indexPath: 'index.html' , // 相对于打包路径index.html的路径
   outputDir: process.env.outputDir || 'dist', // 'dist', 生产环境构建文件的目录
   assetsDir: 'static', // 相对于outputDir的静态资源(js、css、img、fonts)目录
@@ -33,16 +33,11 @@ module.exports = {
     // 压缩图片
     // 需要 npm i -D image-webpack-loader
     config.module
-      .rule("images")
-      .use("image-webpack-loader")
-      .loader("image-webpack-loader")
-      .options({
-        mozjpeg: { progressive: true, quality: 65 },
-        optipng: { enabled: false },
-        pngquant: { quality: [0.65, 0.9], speed: 4 },
-        gifsicle: { interlaced: false },
-        webp: { quality: 75 }
-      });
+      .rule('images')
+      .use('image-webpack-loader')
+      .loader('image-webpack-loader')
+      .options({ bypassOnDebug: true })
+      .end()
     // 打包分析, 打包之后自动生成一个名叫report.html文件(可忽视)
     if (IS_PROD) {
       config.plugin("webpack-report").use(BundleAnalyzerPlugin, [
